@@ -1,0 +1,71 @@
+@import './_variables.scss';
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.entree{
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    border: solid 5px $primary-color;
+    border-radius: 25px;
+    color: $text-color;
+    font-weight:bold;
+    font-size: 1em;
+    margin-bottom:1%;
+
+    /* small screens */
+    @media (max-width: 767px) {
+        width: 60%;
+      }
+    /* larger screens */
+    @media (min-width: 768px) {
+        width: 50%;
+      }
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color:$primary-color;
+    color:$text-color;
+    border:solid 2px $primary-color;
+    border-radius:25px;
+    padding:0.75rem 1.5rem;
+    font-weight:bold;
+    font-size:1em;
+    margin:1rem auto 0;
+    display:block;
+    cursor:pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color:$secondary-color;
+      }
+}
+
+.btn-border-red{
+    background-color:$primary-color;
+    color:$rouge;
+    border:solid 2px $rouge;
+    border-radius:25px;
+    padding:0.75rem 1.5rem;
+    font-weight:bold;
+    font-size:1em;
+    margin:1rem auto 0;
+    display:block;
+    cursor:pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color:$secondary-color;
+      }
+}
