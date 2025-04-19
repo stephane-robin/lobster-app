@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lobster/static/css/main.9bdccb17.css",
-    "main.js": "/lobster/static/js/main.74b9f36c.js",
-    "static/js/453.fdd5de8b.chunk.js": "/lobster/static/js/453.fdd5de8b.chunk.js",
-    "static/media/logo2.webp": "/lobster/static/media/logo2.297f9dc524c4ccbf37d8.webp",
-    "index.html": "/lobster/index.html",
-    "main.9bdccb17.css.map": "/lobster/static/css/main.9bdccb17.css.map",
-    "main.74b9f36c.js.map": "/lobster/static/js/main.74b9f36c.js.map",
-    "453.fdd5de8b.chunk.js.map": "/lobster/static/js/453.fdd5de8b.chunk.js.map"
+    "main.css": "/lobster-app/static/css/main.9bdccb17.css",
+    "main.js": "/lobster-app/static/js/main.16fdb751.js",
+    "static/js/453.176d39db.chunk.js": "/lobster-app/static/js/453.176d39db.chunk.js",
+    "static/media/logo2.webp": "/lobster-app/static/media/logo2.297f9dc524c4ccbf37d8.webp",
+    "index.html": "/lobster-app/index.html",
+    "main.9bdccb17.css.map": "/lobster-app/static/css/main.9bdccb17.css.map",
+    "main.16fdb751.js.map": "/lobster-app/static/js/main.16fdb751.js.map",
+    "453.176d39db.chunk.js.map": "/lobster-app/static/js/453.176d39db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bdccb17.css",
-    "static/js/main.74b9f36c.js"
+    "static/js/main.16fdb751.js"
   ]
 }
