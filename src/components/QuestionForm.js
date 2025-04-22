@@ -2,14 +2,20 @@ import { useState } from 'react'
 import '../styles/QuestionForm.scss'
 
 export default function QuestionForm({joueurKey, joueur, onAddItem, highlightButton}) {
+    /** 
+     * Construit un formulaire compose d'une date, d'un texte, d'un montant et d'un bouton.
+     * lobsterData est le nom du localStorage pour ce projet.
+     * storedData est l'objet JS lie aux donnees de lobsterData.
+     * data stocke dans le programme les donnees de lobsterData.
+     */
     const [date, setDate] = useState('');
     const [achat, setAchat] = useState('');
     const [montant, setMontant] = useState('');
 
     function handleSubmit(e) {
         e.preventDefault();
-        const stored = JSON.parse(localStorage.getItem('lobsterData'));
-        const newId = stored.joueurs.length;
+        const storedData = JSON.parse(localStorage.getItem('lobsterData'));
+        const newId = storedData.joueurs.length;
         const newItem = [newId, date, achat, parseFloat(montant), joueur.nom];
         onAddItem(newItem);
 
@@ -24,6 +30,7 @@ export default function QuestionForm({joueurKey, joueur, onAddItem, highlightBut
             <form onSubmit={handleSubmit}>
                 <input className='entree'
                 name='queryDate'
+                placeholder='jj/mm/aaaa'
                 type='date'
                 value={date}
                 onChange={(e) => setDate(e.target.value)}

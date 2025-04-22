@@ -1,19 +1,35 @@
 @import './_variables.scss';
 
-.App {
-  text-align: center;
+h2{
+  margin-top:0;
+}
 
-.App-logo {
+li{
+  text-align:left;
+}
+
+.app {
+  text-align: center;
+}
+
+.appLogo {
   height: 50px;
   pointer-events: none;
   @media (prefers-reduced-motion: no-preference) {
-    
-      animation: App-logo-spin infinite 20s linear;
-    
+    animation: appLogoSpin infinite 20s linear;
   }
 }
 
-.App-header {
+@keyframes appLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.appHeader {
   background-color: $bg-color;
   height: 10vh;
   display: flex;
@@ -22,20 +38,7 @@
   justify-content: center;
   font-size: 10%;
   color: white;
-}
-
-.App-link {
-  color:$primary-color;
-}
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top:3%;
 }
 
 .argent{
@@ -73,21 +76,10 @@
   align-items: center;
   margin:1%;
 }
-
-.colonne{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
   
 .item{
     margin-right:1rem 5%;
   }
-
-li{
-  text-align:left;
-}
 
 .btn-reset {
   background-color:$rouge;
@@ -106,4 +98,9 @@ li{
     background-color:$rouge2;
     border-color:$rouge2;
   }
+}
+
+.photoJoueur{
+  width:20%;
+  margin-top:5%;
 }

@@ -27,13 +27,6 @@ form{
       }
 }
 
-.colonne{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .btn{
     background-color:$primary-color;
     color:$text-color;
