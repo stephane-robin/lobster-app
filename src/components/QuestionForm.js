@@ -28,6 +28,8 @@ export default function QuestionForm({joueurKey, joueur, onAddItem, highlightBut
     return (
         <div className='colonne'>
             <form onSubmit={handleSubmit}>
+                <label className='label'>
+                Date :
                 <input className='entree'
                 name='queryDate'
                 placeholder='jj/mm/aaaa'
@@ -35,6 +37,7 @@ export default function QuestionForm({joueurKey, joueur, onAddItem, highlightBut
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 required />
+                </label>
 
                 <input className='entree'
                 name='queryAchat'
